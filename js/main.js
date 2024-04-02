@@ -1,4 +1,4 @@
-import { getFilmes, getFilme } from "./filmes.js";
+import { getFilmes, getFilme} from "./filmes.js";
 
 function criarCard (filme) {
     const card = document.createElement('div')
@@ -37,3 +37,17 @@ async function preencherContainer () {
 }
 
 preencherContainer()
+
+// TESTE
+
+filme = {
+    "nome": "Avatar",
+    "sinopse": "Homem azul seila seila seila",
+    "duracao": "02:10:00",
+    "data_lancamento":"2021-12-15",
+    "data_relancamento":null,
+    "foto_capa":"https://exemplo.com/foto_vale.jpg",
+    "valor_unitario":49.9900016784668
+}
+
+postFilme(filme)
